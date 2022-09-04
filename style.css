@@ -17,3 +17,7 @@ body {
     cursor: pointer;
     box-shadow: #282828 .5px .5px 5px .5px;
 }
+.style_link {
+    text-decoration: underline;
+    color: black;
+}
