@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+}
+
+.box-image {
+    height: 256px;
+    width: 256px;
+    border-radius: 256px;
+}
+
+.animated-clickable {
+    transition: background-color .5s ease-out 100ms
+}
+.animated-clickable:hover {
+    background-color: #d7d5d5;
+    cursor: pointer;
+    box-shadow: #282828 .5px .5px 5px .5px;
+}
