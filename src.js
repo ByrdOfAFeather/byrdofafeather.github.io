@@ -1,6 +1,28 @@
 let resume_clicked = false;
 let gold_personal_standard = null;
 
+// https://stackoverflow.com/a/13819253/8448827
+let isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
 document.addEventListener("DOMContentLoaded", function(){
     gold_personal_standard = $("#personal-bio").clone()
     document.getElementById("experience-box").addEventListener("click", () => {
@@ -8,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
     document.getElementById("resume-box").addEventListener("click", () => {
         if (!resume_clicked) {
-            if (typeof screen.orientation !== 'undefined') {
+            if (isMobile.any()) {
                 var link = document.createElement('a');
                 link.href = "resume_redacted.pdf";
                 link.download = 'resume_matthew_byrd.pdf';
