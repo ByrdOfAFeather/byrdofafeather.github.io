@@ -176,7 +176,7 @@
                                             in incorporating into their service. To accomplish this, we had to build out the infrastructure required to query, store, and analyze the data from each product. After the technical lead was moved to another project, I took over the project and lead it
                                             to completion. The second contract I worked on involved a website upgrade from Django 1.9 to 1.11. We used Jira to track tickets, docker to
                                             manage development environments, and had to utilize and setup AWS configurations as well. My third and current contract deals with developing new features
-                                            for a website, particularly improving existing education technology aspects of a website.</p>
+                                            for a website, particularly improving existing education technology aspects of the site.</p>
                                     </div>
 
                                 </div>
@@ -210,8 +210,8 @@
                                         <p>As a researcher, I <a class="style_link" href="https://github.com/byrdofafeather/ResearchTestingBed">implemented</a> a seq2seq question generation model, explored various ways of <a class="style_link" href="https://github.com/ByrdOfAFeather/eduTech/blob/4a26939980e6457628fc2025c4a6b32897974860/irt/irt.ipynb">implementing</a> item response theory,
                                             and preformed my own <a class="style_link" href="https://aclanthology.org/2022.acl-short.15/">research</a> on how syntactic and semantic features can predict how difficult a question will be to solve.
                                             I also <a class="style_link" href="https://github.com/ByrdOfAFeather/pred_essay_quality">explored</a> various practical aspects of Natural Language Processing, including how to fine-tune large language models for down-stream classification tasks. As part of this
-                                            I familiarized myself with SOTA mechanisms to interpret predictions from these large language models, including integrated gradients and LIME. I extended the most popular implementation of lime and opened a <a href="https://github.com/marcotcr/lime/pull/687" class="style_link">pull-request</a>, which
-                                            adds the ability to use a T5 model to fill in blanks created in the input during the LIME process. <br></br>I'm currently exploring ways to use natural language feedback to improve models, partly inspiring my <a href="https://github.com/ByrdOfAFeather/fast-weights" class="style_link">implementation</a>
+                                            I familiarized myself with SOTA mechanisms to interpret predictions from these large language models, including integrated gradients and LIME. I extended the most popular implementation of LIME and opened a <a href="https://github.com/marcotcr/lime/pull/687" class="style_link">pull-request</a>, which
+                                            adds the ability to use a T5 model to fill in blanks in data that LIME creates. <br></br>I'm currently exploring ways to use natural language feedback to improve models, partly inspiring my <a href="https://github.com/ByrdOfAFeather/fast-weights" class="style_link">implementation</a>
                                             of <a href="https://mediatum.ub.tum.de/doc/814768/file.pdf" class="style_link">fast-weights</a>, in which one model (the slow-network) learns weight updates for another (the fast-network). As well, I've taken up studying a classification task in which the goal to is determine the severity of
                                             medical errors based on a description of the event.
                                         </p>
@@ -249,9 +249,9 @@
                                             was a significant undertaking. I had to incorporate multiple concepts from distributed systems, including inter-process (inter-tab) communication, and synchronization strategies. Much of this was further complicated by the complexities of videos - the actual process of
                                             loading a video into the browser for frame-by-frame analysis is not as straight forward as it seems. I'm personally proud of the
                                             <a class="style_link" href="https://github.com/ByrdOfAFeather/argus-web/blob/main/CLICKER/static/js/communicators_manager.js">API</a> I designed to add and remove features that needed to be synchronized, along with support for disabling
-                                            some of these features. Part of this design allowed me to share code for generic video rendering methods between a "main window" and "pop out" windows (videos that have been moved into their own tab). I also designed and put together a <a class="style_link" href="https://youtu.be/Vrnr07vocXQ?t=1129"> MVP</a> for using  pre-trained computer vision models to automatically track animals within the video footage.
+                                            some of these features. Part of this design allowed me to share code for generic video rendering methods between a "main window" (server) and "pop out" windows (clients). I also designed and implemented a <a class="style_link" href="https://youtu.be/Vrnr07vocXQ?t=1129"> MVP</a> for using  pre-trained computer vision models to automatically track animals within the video footage.
                                             <br><br>
-                                            Given the difficulty of implementation, and importance to researching animal locomotion, this software was accepted to the Society of Integrative and Comparative Biology 2021, and remains
+                                            Given the difficulty of implementation and importance to researching animal locomotion, this software was accepted to the Society of Integrative and Comparative Biology 2021. It remains
                                             <a class="style_link" href="https://argus.web.unc.edu/argusweb/">live</a>  as an option for biological researchers to use when analyzing videos.
                                         </p>
                                     </div>
@@ -279,12 +279,6 @@
 <!--                        </div>-->
 <!--                    </div>-->
 <!--                </div>-->
-                <div class="column is-12 has-text-right">
-                    test2
-                </div>
-                <div class="column is-12 has-text-left">
-                    test3
-                </div>
             </div>
         </div>
     </div>
