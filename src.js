@@ -26,7 +26,7 @@ let isMobile = {
 document.addEventListener("DOMContentLoaded", function(){
     gold_personal_standard = $("#personal-bio").clone()
     document.getElementById("experience-box").addEventListener("click", () => {
-        window.location.href="experience.html"
+        document.getElementById("experience").scrollIntoView({"behavior": "smooth"})
     });
     document.getElementById("resume-box").addEventListener("click", () => {
         if (!resume_clicked) {

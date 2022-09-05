@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5SKFSJFL1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-P5SKFSJFL1');
@@ -24,106 +28,266 @@
 </head>
 <body>
 <div class="container" style="height: 100%">
-        <div class="columns is-centered is-vcentered is-multiline" style='height: 100%; margin: 5px 5px 5px 5px'>
-            <div class="column has-text-centered is-6">
-                <div class="columns is-centered is-vcentered is-multiline">
-                    <div class="column is-12">
-                        <img class="box-image" alt="An image of Matthew Byrd" src="pfp.jpg">
-                    </div>
-
-                    <div class="column is-12">
-                        <div class="columns is-multiline is-centered is-vcentered">
-                            <div class="column is-12">
-                                <div id="experience-box" class="box animated-clickable">
-                                    <p>Experience</p>
-                                </div>
-                            </div>
-                            <div class="column is-12">
-                                <div id="projects-box" class="box animated-clickable">
-                                    <p>Projects</p>
-                                </div>
-                            </div>
-                            <div class="column is-12">
-                                <div id="resume-box" class="box animated-clickable">
-                                    <p>Resume</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="columns is-centered is-vcentered is-multiline" style='height: 100%; margin: 5px 5px 5px 5px'>
+        <div class="column has-text-centered is-6">
+            <div class="columns is-centered is-vcentered is-multiline">
+                <div class="column is-12">
+                    <img class="circle-image" alt="An image of Matthew Byrd" src="pfp.jpg">
                 </div>
-            </div>
-            <div class="column has-text-left">
-                <div class="container">
-                    <div id="personal-bio">
-                        <br><br>
-                        <div class="has-text-centered">
-                            <h1 class="title">Matthew Byrd</h1>
-                            <i class="subtitle">Researcher and Software Developer</i>
-                        </div>
-                        <br>
-                        <p>I graduated from <a class="style_link" href="https://www.unc.edu">UNC-Chapel Hill</a> in 2021 with a B.S. in Computer Science and a B.S. in Mathematics. During my time
-                            as an undergraduate I undertook research in Natural Language Processing under <a class="style_link" href="https://www.ssriva.com">Dr. Shashank Srivastava</a>. I studied how to quantify and predict the difficulty of questions, which resulted in a <a class="style_link" href="https://aclanthology.org/2022.acl-short.15/">publication</a>
-                        and <a class="style_link" href="https://photos.app.goo.gl/hK6kKT1cSnACN6yG7">oral presentation</a> at ACL 2022. Alongside my research, I worked under <a class="style_link" href="https://bio.unc.edu/faculty-profile/hedrick/">Dr. Tyson Hedrick</a>
-                        to develop software assisting in biological research. One of these projects was a <a class="style_link" href="https://argus-web-beta.herokuapp.com">website</a> supporting complex video analysis that was published at <a class="style_link" href="https://sicb.org/abstracts/2d-and-3d-video-digitizing-with-a-web-browser/">the Society for Integrative and Compartive Biology 2021</a>.</p>
-                        <br>
-                        <p> In 2022, I started my M.S. in Computer Science at UNC-Chapel Hill. Over the past year I've continued my research with Dr. Srivastava - starting a new project
-                            researching methods to classify medical reports. I have also begun freelance web developer work with <a class="style_link" href="https://www.caktusgroup.com/">Caktus Group</a>, including
-                            undertaking the role of lead developer on a contract with a team of three people.
-                        <br><br>
-                        <p>I enjoy working on things that have impact, especially projects related to education technology. I hope to employ
-                            the skills and knowledge I've developed from both my undergraduate, graduate, and professional experience to help create a more equitable education system.</p>
-                        <br><br>
-                        <p>
-                            Reach me at: matthew_a_byrd<i> at </i>outlook<i> dot </i>com
-                        </p>
-                        <br>
-                    </div>
-                </div>
-            </div>
 
-            <div class="column is-12">
-                <hr>
-                <div class="columns is-centered is-vcentered is-multiline">
-                    <div class="column is-12 has-text-centered">
-                        <h1 class="title"><i>Publications</i></h1>
-                    </div>
-                    <div class="column">
-                        <div id='pred-diff-pub' class="card animated-clickable has-text-centered">
-                            <div class="card-content">
-                                <div class="columns is-multiline is-centered is-vcentered">
-                                    <div class="column is-12">
-                                        <i class="subtitle">Predicting Difficulty and Discrimination of Natural Language Questions</i>
-                                        <br><br>
-                                        <p>Association for Computational Linguistics (2022)</p>
-                                    </div>
-                                    <div class="column is-12">
-                                        Matthew Byrd and Shashank Srivastava
-                                    </div>
-                                </div>
+                <div class="column is-12">
+                    <div class="columns is-multiline is-centered is-vcentered">
+                        <div class="column is-12">
+                            <div id="experience-box" class="box animated-clickable">
+                                <p>Experience</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div id="2d-3d-pub" class="card animated-clickable has-text-centered">
-                            <div class="card-content">
-                                <div class="columns is-multiline is-centered is-vcentered">
-                                    <div class="column is-12">
-                                        <i class="subtitle">2D and 3D video digitizing with a web browser</i>
-                                        <br><br>
-                                        <p>Society for Integrative and Comparative Biology (2021)</p>
-
-                                    </div>
-                                    <div class="column is-12">
-                                        Matthew Byrd and Tyson Hedrick
-                                    </div>
-                                    <!-- https://sicb.org/abstracts/2d-and-3d-video-digitizing-with-a-web-browser/ -->
-                                </div>
+                        <div class="column is-12">
+                            <div id="projects-box" class="box animated-clickable">
+                                <p>Projects</p>
+                            </div>
+                        </div>
+                        <div class="column is-12">
+                            <div id="resume-box" class="box animated-clickable">
+                                <p>Resume</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="column has-text-left">
+            <div class="container">
+                <div id="personal-bio">
+                    <br><br>
+                    <div class="has-text-centered">
+                        <h1 class="title">Matthew Byrd</h1>
+                        <i class="subtitle">Researcher and Software Developer</i>
+                    </div>
+                    <br>
+                    <p>I graduated from <a class="style_link" href="https://www.unc.edu">UNC-Chapel Hill</a> in 2021
+                        with a B.S. in Computer Science and a B.S. in Mathematics. During my time
+                        as an undergraduate, I undertook research in Natural Language Processing under <a
+                                class="style_link" href="https://www.ssriva.com">Dr. Shashank Srivastava</a>. I studied
+                        how to quantify and predict the difficulty of questions, which resulted in a <a
+                                class="style_link" href="https://aclanthology.org/2022.acl-short.15/">publication</a>
+                        and <a class="style_link" href="https://photos.app.goo.gl/hK6kKT1cSnACN6yG7">oral
+                            presentation</a> at <a class="style_link" href="https://aclanthology.org/venues/acl/">ACL 2022</a>. Alongside my research, I worked under <a class="style_link"
+                                                                                                   href="https://bio.unc.edu/faculty-profile/hedrick/">Dr.
+                            Tyson Hedrick</a>
+                        to develop software assisting in biological research. One of these projects was a <a
+                                class="style_link" href="https://argus-web-beta.herokuapp.com">website</a> supporting
+                        complex video analysis that was published at <a class="style_link"
+                                                                        href="https://sicb.org/abstracts/2d-and-3d-video-digitizing-with-a-web-browser/">the
+                            Society for Integrative and Comparative Biology 2021</a>.</p>
+                    <br>
+                    <p> In 2022, I started my M.S. in Computer Science at UNC-Chapel Hill. Over the past year I've
+                        continued my research with Dr. Srivastava - starting a new project
+                        researching methods to classify medical reports. I have also begun freelance web developer work
+                        with <a class="style_link" href="https://www.caktusgroup.com/">Caktus Group</a>, including
+                        undertaking the role of lead developer on a contract with a team of three people.
+                        <br><br>
+                    <p>I enjoy working on things that have impact, especially projects related to education technology.
+                        I hope to employ
+                        the skills and knowledge I've developed from both my undergraduate, graduate, and professional
+                        experience to help create a more equitable education system.</p>
+                    <br><br>
+                    <p>
+                        Reach me at: matthew_a_byrd<i> at </i>outlook<i> dot </i>com
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-12">
+            <hr>
+            <div class="columns is-centered is-vcentered is-multiline">
+                <div class="column is-12 has-text-centered">
+                    <h1 class="title"><i>Publications</i></h1>
+                </div>
+                <div class="column">
+                    <div id='pred-diff-pub' class="card animated-clickable has-text-centered">
+                        <div class="card-content">
+                            <div class="columns is-multiline is-centered is-vcentered">
+                                <div class="column is-12">
+                                    <i class="subtitle">Predicting Difficulty and Discrimination of Natural Language
+                                        Questions</i>
+                                    <br><br>
+                                    <p>Association for Computational Linguistics (2022)</p>
+                                </div>
+                                <div class="column is-12">
+                                    Matthew Byrd and Shashank Srivastava
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div id="2d-3d-pub" class="card animated-clickable has-text-centered">
+                        <div class="card-content">
+                            <div class="columns is-multiline is-centered is-vcentered">
+                                <div class="column is-12">
+                                    <i class="subtitle">2D and 3D video digitizing with a web browser</i>
+                                    <br><br>
+                                    <p>Society for Integrative and Comparative Biology (2021)</p>
+
+                                </div>
+                                <div class="column is-12">
+                                    Matthew Byrd and Tyson Hedrick
+                                </div>
+                                <!-- https://sicb.org/abstracts/2d-and-3d-video-digitizing-with-a-web-browser/ -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='experience' class="column is-12">
+            <hr>
+            <div class="columns is-centered is-vcentered is-multiline">
+                <div class="column is-12 has-text-centered">
+                    <h1 class="title"><i>Experience</i></h1>
+                </div>
+                <div class="column is-12 has-text-left">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="columns is-centered is-vcentered">
+                                <div class="column is-narrow">
+                                    <img class='box-image', src="">
+                                </div>
+                                <div class="column">
+                                    <h1 class="subtitle">Web Developer, Caktus Group</h1>
+                                    <h1 class="subtitle is-6">January 2022</h1>
+                                    <br>
+                                    <p>Highlights:</p>
+                                    <ul>
+
+                                        <li> Technical lead (3-person team) on a SAAS integration contract for a Django based security application.</li>
+
+                                        <li> Responsible for 9 modules consisting of querying API data, storing it, and testing each aspect rigorously.</li>
+
+                                        <li>Personally built 4 modules, each module adding value to our client's platform. Assisted in remaining modules.</li>
+                                    </ul>
+                                    <br>
+                                    <p>Description:</p>
+                                    <div class="description-box">
+                                        <p>At my time at Caktus group, I've been contracted on three projects. Much of the first project dealt with learning APIs for products out client was interested
+                                            in incorporating into their service. To accomplish this, we had to build out the infrastructure required to query, store, and analyze the data from each product. After the technical lead was moved to another project, I took over the project and lead it
+                                            to completion. The second contract I worked on involved a website upgrade from Django 1.9 to 1.11. We used Jira to track tickets, docker to
+                                            manage development environments, and had to utilize and setup AWS configurations as well. My third and current contract deals with developing new features
+                                            for a website, particularly improving existing education technology aspects of a website.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column is-12 has-text-left">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="columns is-centered is-vcentered">
+                                <div class="column is-narrow has-text-centered">
+                                    <img class='box-image', src="">
+                                </div>
+                                <div class="column">
+                                    <h1 class="subtitle">Researcher, University of North Carolina at Chapel Hill</h1>
+                                    <h1 class="subtitle is-6">May 2020</h1>
+                                    <br>
+                                    <p>Highlights:</p>
+                                    <ul>
+
+                                        <li> First author on a paper published and selected for oral presentation in top NLP conference ACL. </li>
+                                        <li> Developed a way to quantify and predict the difficulty of questions; useful for question answering research.</li>
+                                        <li> As part of research, trained multiple SOTA question answering models distributed across 4 GPUs.</li>
+                                        <li> Developed a rigorously tested pipeline for classifying medical data, to be utilized in UNC hospitals.</li>
+                                    </ul>
+                                    <br>
+                                    <p>Description:</p>
+                                    <div class="description-box">
+                                        <p>As a researcher, I <a class="style_link" href="https://github.com/byrdofafeather/ResearchTestingBed">implemented</a> a seq2seq question generation model, explored various ways of <a class="style_link" href="https://github.com/ByrdOfAFeather/eduTech/blob/4a26939980e6457628fc2025c4a6b32897974860/irt/irt.ipynb">implementing</a> item response theory,
+                                            and preformed my own <a class="style_link" href="https://aclanthology.org/2022.acl-short.15/">research</a> on how syntactic and semantic features can predict how difficult a question will be to solve.
+                                            I also <a class="style_link" href="https://github.com/ByrdOfAFeather/pred_essay_quality">explored</a> various practical aspects of Natural Language Processing, including how to fine-tune large language models for down-stream classification tasks. As part of this
+                                            I familiarized myself with SOTA mechanisms to interpret predictions from these large language models, including integrated gradients and LIME. I extended the most popular implementation of lime and opened a <a href="https://github.com/marcotcr/lime/pull/687" class="style_link">pull-request</a>, which
+                                            adds the ability to use a T5 model to fill in blanks created in the input during the LIME process. <br></br>I'm currently exploring ways to use natural language feedback to improve models, partly inspiring my <a href="https://github.com/ByrdOfAFeather/fast-weights" class="style_link">implementation</a>
+                                            of <a href="https://mediatum.ub.tum.de/doc/814768/file.pdf" class="style_link">fast-weights</a>, in which one model (the slow-network) learns weight updates for another (the fast-network). As well, I've taken up studying a classification task in which the goal to is determine the severity of
+                                            medical errors based on a description of the event.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column is-12 has-text-left">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="columns is-centered is-vcentered">
+                                <div class="column is-narrow has-text-centered">
+                                    <img class='box-image', src="">
+                                </div>
+                                <div class="column">
+                                    <h1 class="subtitle">Research Programmer, University of North Carolina at Chapel Hill</h1>
+                                    <h1 class="subtitle is-6">August 2019 - December 2021</h1>
+                                    <br>
+                                    <p>Highlights:</p>
+                                    <ul>
+                                        <li> Integrated pre-trained computer vision models to assist in automated video analysis using tensorflow.js.</li>
+                                        <li> Sole author of web-based video analysis tools now used by UNC lab in biological research.</li>
+                                        <li> Published technical contribution to biology community</li>
+                                    </ul>
+                                    <br>
+                                    <p>Description:</p>
+                                    <div class="description-box">
+                                        <p>As a support programmer, I maintained an existing repository, <a class="style_link" href="https://github.com/kilmoretrout/argus_gui">ARGUS</a>, which
+                                            provided support for complex video analysis features such as 3D point recovery (in the case of multiple cameras), and path
+                                            tracking. Given the complexity of this package, and the inconvenience of having to install Python to use it, I was also responsible with remaking ARGUS into <a class="style_link" href="https://github.com/ByrdOfAFeather/argus-web">ARGUSWEB</a> which
+                                            was a significant undertaking. I had to incorporate multiple concepts from distributed systems, including inter-process (inter-tab) communication, and synchronization strategies. Much of this was further complicated by the complexities of videos - the actual process of
+                                            loading a video into the browser for frame-by-frame analysis is not as straight forward as it seems. I'm personally proud of the
+                                            <a class="style_link" href="https://github.com/ByrdOfAFeather/argus-web/blob/main/CLICKER/static/js/communicators_manager.js">API</a> I designed to add and remove features that needed to be synchronized, along with support for disabling
+                                            some of these features. Part of this design allowed me to share code for generic video rendering methods between a "main window" and "pop out" windows (videos that have been moved into their own tab). I also designed and put together a <a class="style_link" href="https://youtu.be/Vrnr07vocXQ?t=1129"> MVP</a> for using  pre-trained computer vision models to automatically track animals within the video footage.
+                                            <br><br>
+                                            Given the difficulty of implementation, and importance to researching animal locomotion, this software was accepted to the Society of Integrative and Comparative Biology 2021, and remains
+                                            <a class="style_link" href="https://argus.web.unc.edu/argusweb/">live</a>  as an option for biological researchers to use when analyzing videos.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+<!--                <div class="column is-12 has-text-left">-->
+<!--                    <div class="columns is-centered is-vcentered">-->
+<!--                        <div class="column is-narrow has-text-centered">-->
+<!--                            <img class='box-image', src="pfp.jpg">-->
+<!--                        </div>-->
+<!--                        <div class="column">-->
+<!--                            <h1 class="subtitle">Accessible Web Developer, University of North Carolina at Chapel Hill</h1>-->
+<!--                            <h1 class="subtitle is-6">August 2018 - May 2019</h1>-->
+<!--                            <br>-->
+<!--                            <ul style="list-style-type: disc;">-->
+<!--                                <li>Developed an automated video editor using Python, OpenCV, and NodeJS, which allowed for the automatic-->
+<!--                                creation of accessible video games.</li>-->
+<!--                                <li> Used C++ to create multi-threaded Python bindings, deceasing processing time by 50%. </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="column is-12 has-text-right">
+                    test2
+                </div>
+                <div class="column is-12 has-text-left">
+                    test3
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

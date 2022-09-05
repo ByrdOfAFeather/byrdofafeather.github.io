@@ -3,10 +3,14 @@ body {
     height: 100%;
 }
 
-.box-image {
+.circle-image {
     height: 256px;
     width: 256px;
     border-radius: 256px;
+}
+.box-image {
+    height: 256px;
+    width: 256px;
 }
 
 .animated-clickable {
