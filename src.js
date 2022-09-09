@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 link.dispatchEvent(new MouseEvent('click'));
                 return;
             }
+            /*
             $("#resume-box").css("background-color", "#d7d5d5")
             let personal_info = $("#personal-bio");
             let personal_info_copy = personal_info.clone();
@@ -50,6 +51,9 @@ document.addEventListener("DOMContentLoaded", function(){
                 showResume(height, width);
             })
             resume_clicked = true;
+            */
+            window.open("resume_redacted.pdf")
+
         } else {
             $("#resume-box").css("background-color", "white")
             $("#personal-bio-hidden").slideUp(500, () => {
