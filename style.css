@@ -7,8 +7,10 @@ body {
     height: 256px;
     width: 256px;
     border-radius: 256px;
+
 }
 .box-image {
+    object-fit: cover;
     height: 256px;
     width: 256px;
 }
@@ -21,7 +23,16 @@ body {
     cursor: pointer;
     box-shadow: #282828 .5px .5px 5px .5px;
 }
-.style_link {
+.styled_link {
     text-decoration: underline;
     color: black;
+}
+
+.bullet_list {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.link_style {
+    color: blue;
 }
