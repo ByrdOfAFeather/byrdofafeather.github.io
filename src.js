@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (!resume_clicked) {
             if (isMobile.any()) {
                 var link = document.createElement('a');
-                link.href = "resume_redacted.pdf";
+                link.href = "resume.pdf";
                 link.download = 'resume_matthew_byrd.pdf';
                 link.dispatchEvent(new MouseEvent('click'));
                 return;
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
             })
             resume_clicked = true;
             */
-            window.open("resume_redacted.pdf")
+            window.open("resume.pdf")
 
         } else {
             $("#resume-box").css("background-color", "white")
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
 function showResume(height, width) {
 
     let setup = $("#personal-bio-hidden").append(
-        $(`<embed src=\"resume_redacted.pdf\" width=\"${width}px\" height=\"${height}px\" style="height:${height}px"/>\n`)
+        $(`<embed src=\"resume.pdf\" width=\"${width}px\" height=\"${height}px\" style="height:${height}px"/>\n`)
     );
     $("#personal-bio-hidden").css("visibility", "visible");
 }
